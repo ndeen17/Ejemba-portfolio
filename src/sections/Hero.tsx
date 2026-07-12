@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
-
-const EMAIL = 'hello@lawrettaejemba.com';
+import { EMAIL } from '../lib/contact';
 
 const stats = [
   { value: '3', label: 'Years', detail: 'Virtual assistance & task management' },

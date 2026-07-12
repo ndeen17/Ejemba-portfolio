@@ -1,20 +1,21 @@
 import { motion } from 'framer-motion';
+import { ArrowUpRight } from 'lucide-react';
+import { EMAIL } from '../lib/contact';
 
-export default function WhyRemote() {
+export default function WhyMe() {
   return (
-    <section id="why-remote" className="container-x mt-20 sm:mt-24">
+    <section className="container-x pt-12 sm:pt-20">
       <motion.div
-        initial={{ opacity: 0, y: 12 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-80px' }}
-        transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-        className="rounded-3xl border border-hairline bg-white p-6 sm:p-12"
+        initial={{ opacity: 0, y: 8 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
         <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Why remote</p>
-        <h2 className="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-          Why I switched to a home-based job
-        </h2>
-        <div className="mt-5 max-w-[600px] space-y-4 text-[15px] leading-relaxed text-muted sm:text-lg">
+        <h1 className="mt-3 text-4xl font-semibold leading-[1.1] tracking-tight text-ink sm:text-5xl">
+          Why I switched to a home-based job.
+        </h1>
+
+        <div className="mt-8 max-w-[640px] space-y-5 text-lg leading-[1.6] text-muted">
           <p>
             I transitioned to a home-based career because I wanted the opportunity to support
             businesses from anywhere while maintaining the same high level of professionalism and
@@ -27,6 +28,12 @@ export default function WhyRemote() {
             locations. It's a work environment where I can do my best work while continuing to
             grow professionally.
           </p>
+        </div>
+
+        <div className="mt-10 flex flex-wrap items-center gap-3">
+          <a href={`mailto:${EMAIL}`} className="btn-dark">
+            Email me <ArrowUpRight size={16} className="ml-1" />
+          </a>
         </div>
       </motion.div>
     </section>

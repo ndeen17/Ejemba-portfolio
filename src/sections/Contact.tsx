@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { Copy, Check, ArrowUpRight } from 'lucide-react';
-
-const EMAIL = 'hello@lawrettaejemba.com';
+import { Copy, Check, ArrowUpRight, Phone } from 'lucide-react';
+import { EMAIL, PHONE_DISPLAY, PHONE_HREF } from '../lib/contact';
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
@@ -19,9 +18,9 @@ export default function Contact() {
   return (
     <section id="contact" className="container-x mt-20 sm:mt-28">
       <div className="rounded-3xl border border-hairline bg-white p-6 sm:p-12">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Get in touch</p>
+        <p className="font-mono text-xs uppercase tracking-[0.2em] text-muted">Ways to reach out</p>
         <h2 className="mt-3 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-          Let's take support off your plate.
+          Let's work together.
         </h2>
         <p className="mt-3 max-w-[520px] text-muted">
           Need reliable virtual assistance, customer support, or day-to-day admin help? I'd love
@@ -44,6 +43,10 @@ export default function Contact() {
               </>
             )}
           </button>
+          <a href={`tel:${PHONE_HREF}`} className="btn-ghost">
+            <Phone size={16} className="mr-1" />
+            {PHONE_DISPLAY}
+          </a>
         </div>
       </div>
     </section>

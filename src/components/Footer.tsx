@@ -1,6 +1,5 @@
-import { Linkedin, Mail } from 'lucide-react';
-
-const EMAIL = 'hello@lawrettaejemba.com';
+import { Linkedin, Mail, Phone } from 'lucide-react';
+import { EMAIL, PHONE_HREF } from '../lib/contact';
 
 export default function Footer() {
   return (
@@ -14,6 +13,9 @@ export default function Footer() {
         <div className="flex items-center gap-3 text-muted">
           <a href={`mailto:${EMAIL}`} aria-label="Email" className="rounded-full border border-hairline bg-white p-2 transition hover:text-ink">
             <Mail size={16} />
+          </a>
+          <a href={`tel:${PHONE_HREF}`} aria-label="Phone" className="rounded-full border border-hairline bg-white p-2 transition hover:text-ink">
+            <Phone size={16} />
           </a>
           <a href="https://linkedin.com/" aria-label="LinkedIn" className="rounded-full border border-hairline bg-white p-2 transition hover:text-ink">
             <Linkedin size={16} />
