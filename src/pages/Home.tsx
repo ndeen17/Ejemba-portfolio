@@ -15,10 +15,10 @@ export default function Home() {
       <Tools />
       <Expertise />
       <DailyWork />
+      <Clients />
       <EmploymentHistory />
       <Education />
       <Certifications />
-      <Clients />
       <Contact />
     </>
   );
