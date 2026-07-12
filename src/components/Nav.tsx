@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, UserRound, X } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 const anchorLinks = [
@@ -29,12 +29,8 @@ export default function Nav() {
         )}
       >
         <Link to="/" className="flex items-center gap-2 rounded-pill px-1 py-0.5 transition hover:bg-chip" aria-label="Home">
-          <span className="flex h-9 w-9 flex-none items-center justify-center overflow-hidden rounded-full bg-chip">
-            <img
-              src="/lawretta-photo.png"
-              alt=""
-              className="h-full w-full object-cover object-top"
-            />
+          <span className="flex h-9 w-9 flex-none items-center justify-center rounded-full bg-accent/15 text-accent">
+            <UserRound size={18} />
           </span>
           <span className="flex flex-col leading-tight">
             <span className="text-sm font-semibold text-ink">Lawretta E.</span>
