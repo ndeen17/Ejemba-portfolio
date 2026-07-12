@@ -47,12 +47,16 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
           className="flex-none"
         >
-          <div className="flex w-44 items-center justify-center rounded-[2rem] bg-chip p-3 sm:w-52 md:w-60">
+          <div className="relative flex w-44 items-center justify-center rounded-[2rem] bg-chip p-3 sm:w-52 md:w-60">
             <img
               src="/lawretta-photo.png"
               alt="Lawretta Ejemba"
               className="h-auto w-full rounded-[1.5rem] object-contain"
             />
+            <div className="absolute inset-x-5 bottom-5 flex flex-col items-center gap-0.5 rounded-pill bg-ink/90 px-3 py-2 text-center backdrop-blur">
+              <span className="text-xs font-semibold leading-none text-bg">Lawretta Ejemba</span>
+              <span className="text-[10px] font-medium leading-none text-bg/70">Support Specialist</span>
+            </div>
           </div>
         </motion.div>
       </div>
