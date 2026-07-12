@@ -53,7 +53,7 @@ export default function Hero() {
               alt="Lawretta Ejemba"
               className="h-auto w-full rounded-[1.5rem] object-contain"
             />
-            <div className="absolute inset-x-5 bottom-5 flex flex-col items-center gap-0.5 rounded-pill bg-ink/90 px-3 py-2 text-center backdrop-blur">
+            <div className="absolute inset-x-5 bottom-2 flex flex-col items-center gap-0.5 rounded-pill bg-ink/90 px-3 py-2 text-center backdrop-blur">
               <span className="text-xs font-semibold leading-none text-bg">Lawretta Ejemba</span>
               <span className="text-[10px] font-medium leading-none text-bg/70">Support Specialist</span>
             </div>
