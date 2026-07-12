@@ -20,13 +20,14 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-[560px] text-lg leading-[1.55] text-muted sm:text-xl">
-            I bring 3 years of hands-on experience providing reliable virtual assistance,
-            supporting businesses through efficient task management and clear, professional
-            customer communication.
+            With three years of hands-on experience in virtual assistance, I help businesses stay
+            organized and efficient through structured task management and clear, professional
+            communication.
           </p>
           <p className="mt-4 max-w-[560px] text-lg leading-[1.55] text-muted sm:text-xl">
-            With over 2 years in customer support and service, I consistently provide timely,
-            accurate, and customer-focused solutions that keep operations running smoothly.
+            Complementing this is over two years in customer support and service, where I've
+            built a reputation for delivering timely, accurate, and customer-focused solutions
+            that keep operations running smoothly.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
