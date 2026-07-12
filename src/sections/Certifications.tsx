@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Award } from 'lucide-react';
 import { certifications } from '../data/certifications';
 
 export default function Certifications() {
@@ -23,7 +22,7 @@ export default function Certifications() {
             className="flex items-start gap-4 py-6"
           >
             <span className="mt-0.5 flex h-9 w-9 flex-none items-center justify-center rounded-full bg-accent/15 text-accent">
-              <Award size={16} />
+              <cert.icon size={16} />
             </span>
             <div>
               <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">

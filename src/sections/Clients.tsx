@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Check } from 'lucide-react';
 import { clientTypes } from '../data/clients';
 
 export default function Clients() {
@@ -19,11 +18,11 @@ export default function Clients() {
 
         <ul className="mt-6 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
           {clientTypes.map((client) => (
-            <li key={client} className="flex items-start gap-3">
-              <span className="mt-0.5 flex h-5 w-5 flex-none items-center justify-center rounded-full bg-accent/15 text-accent">
-                <Check size={12} />
+            <li key={client.label} className="flex items-start gap-3">
+              <span className="mt-0.5 flex h-8 w-8 flex-none items-center justify-center rounded-full bg-accent/15 text-accent">
+                <client.icon size={15} />
               </span>
-              <span className="text-[15px] leading-relaxed text-muted">{client}</span>
+              <span className="pt-1 text-[15px] leading-relaxed text-muted">{client.label}</span>
             </li>
           ))}
         </ul>

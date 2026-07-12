@@ -20,10 +20,11 @@ export default function Tools() {
       >
         {tools.map((tool) => (
           <span
-            key={tool}
-            className="rounded-pill border border-hairline bg-white px-4 py-2 text-sm font-medium text-ink"
+            key={tool.label}
+            className="inline-flex items-center gap-2 rounded-pill border border-hairline bg-white px-4 py-2 text-sm font-medium text-ink"
           >
-            {tool}
+            <tool.icon size={15} className="text-accent" />
+            {tool.label}
           </span>
         ))}
       </motion.div>

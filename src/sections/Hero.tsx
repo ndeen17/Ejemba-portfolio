@@ -2,12 +2,6 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { EMAIL } from '../lib/contact';
 
-const stats = [
-  { value: '3', label: 'Years', detail: 'Virtual assistance & task management' },
-  { value: '2+', label: 'Years', detail: 'Customer support & service' },
-  { value: '2', label: 'Years', detail: 'Customer-focused solutions' },
-];
-
 export default function Hero() {
   return (
     <section id="top" className="container-x pt-12 sm:pt-20">
@@ -42,23 +36,6 @@ export default function Hero() {
             What I do
           </a>
         </div>
-      </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0, y: 12 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-        className="mt-14 grid grid-cols-3 divide-x divide-hairline rounded-2xl border border-hairline bg-white sm:mt-16"
-      >
-        {stats.map((s) => (
-          <div key={s.detail} className="px-3 py-5 text-center sm:px-6 sm:py-6">
-            <p className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
-              {s.value}
-              <span className="ml-1 text-sm font-medium text-muted">{s.label}</span>
-            </p>
-            <p className="mt-1 text-xs leading-snug text-muted sm:text-sm">{s.detail}</p>
-          </div>
-        ))}
       </motion.div>
     </section>
   );
